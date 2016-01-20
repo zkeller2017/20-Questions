@@ -191,11 +191,11 @@ public class BinaryTree<E> implements Iterable<E>
 			return  "" + this.value();
 		}
 		if (left == null)
-			return value + "(" + "EMPTY, " + right.toString() + ")";
+			return value + "(" + "EMPTY," + right.toString() + ")";
 		else if (right == null)
-			return  this.value + "(" + left.toString() + ", EMPTY" + ")";
+			return  this.value + "(" + left.toString() + ",EMPTY" + ")";
 		else
-			return  this.value + "(" + left.toString() + ", " + right.toString() + ")";
+			return  this.value + "(" + left.toString() + "," + right.toString() + ")";
 	}
 	
 	/**
